@@ -1,0 +1,99 @@
+* {
+  font-family: 'Microsoft JhengHei', 'Playfair Display', serif;
+  color: #666;
+}
+
+.top {
+  font-size: 30px;
+  font-family: 'Playfair Display';
+  margin-bottom: 20px;
+}
+
+.mainArea {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 200px;
+  font-size: 24px;
+  background-color: #b8e6df;
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.addBtn i:hover {
+  color: #ff7b00;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+a.delBtn {
+  width: 60px;
+  text-align: center;
+}
+
+a.delBtn i:hover {
+  color: #ff7b00;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.recordLi {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recordLi div {
+  vertical-align: middle;
+}
+
+.checkBox {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.checkBox:checked + label {
+  -webkit-text-decoration: line-through #ff7b00;
+          text-decoration: line-through #ff7b00;
+}
+
+.checkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  font-size: 20px;
+  border-top: solid 1px #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+}
+
+.delAll {
+  color: #ff7b00;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.delAll:hover {
+  text-decoration: none;
+  background-color: #ff7b00;
+  color: white;
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,82 @@
+$color_warn: #ff7b00;
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+* {
+    // outline: solid 1px black;
+    font-family: 'Microsoft JhengHei', 'Playfair Display', serif;
+    color: #666;
+}
+
+// main ------------------------------
+.top  {
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    margin-bottom: 20px;
+}
+
+.mainArea {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: 24px;
+    background-color: #b8e6df;
+    padding: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(black,0.3);
+}
+.addBtn i:hover {
+    color: $color_warn;
+    transform: scale(1.2);
+}
+
+a.delBtn {
+    width: 60px;
+    text-align: center;
+    i:hover {
+        color: $color_warn;
+        transform: scale(1.2);
+    }
+}
+
+.recordLi {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    div {
+        vertical-align: middle;
+    }
+}
+.checkBox {
+    @include size(22px, 22px);
+    margin-right: 12px;
+    &:checked + label{
+        text-decoration: line-through $color_warn;
+    }
+}
+.checkList {
+    display: flex;
+    align-items: center;
+}
+.footer {
+    font-size: 20px;
+    border-top: solid 1px #fff;
+    display: flex;
+    padding-top: 16px;
+}
+.delAll {
+    color: $color_warn;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    &:hover {
+        text-decoration: none;
+        background-color: $color_warn;
+        color: white;
+    }
+}
