@@ -35,11 +35,12 @@ $color_warn: #ff7b00;
 }
 
 a.delBtn {
-    width: 60px;
-    text-align: center;
-    i:hover {
-        color: $color_warn;
-        transform: scale(1.2);
+    i {
+       padding: 0px 16px;
+       &:hover {
+            color: $color_warn;
+            transform: scale(1.2);
+        } 
     }
 }
 

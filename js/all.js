@@ -42,7 +42,9 @@ function addLI(e) {
     // 用 push 的方式 推入每一筆 物件object 資料
     data.push(dataObject);
     // 更新 並 印在網頁上 的 function 會重複用到 所以拉出來寫
-    updateData(data);  //呼叫更新函式
+    updateData(data);  // 呼叫更新函式
+
+    inputArea.value = ''; // 輸入todo之後清除 input
 }
 
 
@@ -58,7 +60,7 @@ function updateData(myData) {
                         <input type="checkbox" class="checkBox" id="check${i}">
                         <label for="check${i}">${item.content}</label>
                     </div>
-                    <a href="#" class="delBtn" data-num="${i}"><i class="far fa-trash-alt"></i></a>
+                    <a href="#" class="delBtn"><i class="far fa-trash-alt" data-num="${i}"></i></a>
                 </li>`
 
         footerStr = `<div class="flex-grow-1">還有 ${i + 1} 筆任務</div>
@@ -76,7 +78,8 @@ function updateData(myData) {
 // 刪除資料（click 事件 function）
 function deleteLi(e) {
     let num = e.target.dataset.num;  // 當前指向的編號
-    if (e.target.nodeName !== 'I') { // 若指向的不是 A 則中止動作
+    // console.log(e.target.nodeName);
+    if (e.target.nodeName !== 'I') { // 若指向的不是 I 則中止動作
         return;
     };
     data.splice(num, 1); // 刪除點選的清單

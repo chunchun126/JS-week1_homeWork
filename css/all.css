@@ -28,9 +28,8 @@
           transform: scale(1.2);
 }
 
-a.delBtn {
-  width: 60px;
-  text-align: center;
+a.delBtn i {
+  padding: 0px 16px;
 }
 
 a.delBtn i:hover {
